@@ -1,7 +1,0 @@
-{
-  "name": "skz-recommender",
-  "version": "0",
-  "description": "skz recommender",
-  "main": "index.html",
-  "proxy": "https://manyodev.github.io/skz-recommender/"
-}
