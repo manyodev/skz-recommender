@@ -7,7 +7,9 @@ let audioContext;
 
 function normalizeMediaLoudness(mediaElement) {
   if (!AudioContextClass) {
-    console.error("AudioContext is unavailable; preview loudness cannot be normalized.");
+    console.error(
+      "AudioContext is unavailable; preview loudness cannot be normalized.",
+    );
     return;
   }
 
@@ -100,8 +102,7 @@ fetch("skz-recommender.json")
     form.style.display = "block";
   })
   .catch((err) => {
-    statusText.innerText =
-      "Error loading the local music catalog.";
+    statusText.innerText = "Error loading the local music catalog.";
     console.error(err);
   });
 
@@ -145,7 +146,7 @@ form.addEventListener("submit", function (e) {
       <p><strong>Genre:</strong> ${getTrackGenre(randomTrack)}</p>
       <p><strong>Sub-Genre:</strong> ${getTrackSubGenre(randomTrack)}</p>
 
-      <p>${getTrackDescription(randomTrack)}</p>
+     
     `;
     normalizeMediaLoudness(resultDiv.querySelector("audio, video"));
   }

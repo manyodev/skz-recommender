@@ -4,8 +4,16 @@ body {
   margin: 50px auto;
   text-align: center;
   line-height: 1.6;
+  background-color: #24242B;
+  background-image: url("bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
+h2, label, option, select, button {
+  background-color: #395A58;
+  color: #fff;
+  margin-bottom: 20px;
+}
 select,
 button {
   padding: 10px;
@@ -17,13 +25,15 @@ button {
 #recommenderForm,
 #result {
   display: none;
+  color: #fff;
 }
 
 #result {
   margin-top: 30px;
   padding: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #00BCFB;
   border-radius: 8px;
+  background-color: #395A58;
 }
 
 .artwork {
@@ -35,4 +45,9 @@ button {
 video {
   width: 100%;
   max-width: 500px;
+}
+footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #fff;
 }
